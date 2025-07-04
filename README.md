@@ -24,10 +24,10 @@ Desde la carpeta `laravel.autorizacion`:
    composer update
    npm i
    ```
-3. Crear la base de datos y poblarla con los datos de prueba:
+3. Crear la base de datos y poblarla con los datos de prueba 
 
    ```bash
-   php artisan migrate --seed
+   /laravel.autorizacion/data_base_backup/db_autorizacion.sql
    ```
 4. Iniciar la aplicación en dos terminales diferentes:
 
