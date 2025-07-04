@@ -18,6 +18,23 @@ A continuación se detallan los pasos para cada componente.
 Desde la carpeta `laravel.autorizacion`:
 
 1. Copiar el archivo `.env.example` a `.env` y definir la conexión a la base de datos y la clave de la aplicación.
+
+   ```bash
+      DB_CONNECTION=pgsql
+      DB_HOST=127.0.0.1
+      DB_PORT=5432
+      DB_DATABASE=db_autorizacion
+      DB_USERNAME=usuario
+      DB_PASSWORD=contraseña
+      .
+      .
+      .
+      .
+      .
+      .
+      SOCKET_URL=http://10.100.12.249:3001  #cambiar direccion del Socket  
+   ```
+
 2. Ejecutar las dependencias de PHP y JavaScript:
 
    ```bash
@@ -29,14 +46,12 @@ Desde la carpeta `laravel.autorizacion`:
    ```bash
    /laravel.autorizacion/data_base_backup/db_autorizacion.sql
    ```
-4. Iniciar la aplicación en dos terminales diferentes:
+4. Iniciar la aplicación:
 
    ```bash
    php artisan serve    # Terminal 1
-   npm run watch        # Terminal 2
    ```
 
-En el [`README.md` del proyecto Laravel](laravel.autorizacion/README.md) se incluyen ejemplos de credenciales generadas por los seeders y variables para la conexión a otros servicios.
 
 ## 2. Servidor Socket.IO
 
