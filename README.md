@@ -62,5 +62,3 @@ El código principal se ubica en [`socket.server/server.js`](socket.server/serve
 laravel.autorizacion/   Aplicación web Laravel.
 socket.server/          Servidor Node.js con Socket.IO.
 ```
-
-Para más detalles sobre cada proyecto consulta los READMEs y la documentación interna de cada carpeta.
